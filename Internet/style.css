@@ -1,32 +1,25 @@
+h1 {
+    color: rgb(23, 22, 24);
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid black;
+}
 
-        .para {
-            color: red;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-        }
-        
-        h1 {
-            color: rgb(23, 22, 24);
-            text-align: center;
-            margin: 50px;
-            padding: 50px;
-            border: 1px solid black;
-        }
-        
-        #destacado {
-            background-color: brown;
-        }
-        
-        .img {
-            width: 400px;
-            height: auto;
-            border-radius: 100px;
-            border: 5px solid black;
-        }
-      
-        .p {
-            text-align: center;
-            margin: 14px;
-            padding: 14px;
-            color: white;
-        }
+#destacado {
+    background-color: brown;
+}
+
+.img {
+    width: 400px;
+    height: auto;
+    border-radius: 100px;
+    border: 5px solid black;
+}
+
+p {
+    text-align: center;
+    margin: 14px;
+    padding: 14px;
+    color: white;
+}
