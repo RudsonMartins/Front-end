@@ -1,0 +1,89 @@
+/* Resetando margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+#cabecalho {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 20px;
+}
+
+#cabecalho h1 {
+    font-size: 36px;
+}
+
+#cabecalho p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilo para o conteúdo */
+#conteudo {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#conteudo h2 {
+    color: #ff6600;
+    font-size: 28px;
+}
+
+#conteudo img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+#conteudo ul {
+    list-style-type: square;
+    margin-top: 10px;
+}
+
+#conteudo ul li {
+    font-size: 16px;
+}
+
+/* Estilo do rodapé */
+#rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 164px;
+  
+}
+
+#rodape p {
+    font-size: 14px;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    #conteudo {
+        width: 90%;
+    }
+
+    #cabecalho h1 {
+        font-size: 28px;
+    }
+
+    #conteudo h2 {
+        font-size: 24px;
+    }
+}
