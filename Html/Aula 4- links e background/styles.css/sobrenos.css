@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do elemento */
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden; /* Impede a rolagem lateral */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: red;
+    padding: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center; /* Centraliza o texto no header */
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh ;
+}
+
+
+nav {
+    float: right;
+    margin-right: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px; /* Espaço entre links */
+    font-family: inherit;
+    font-size: medium;
+}
+
+div {
+    text-align: center;
+}
+
+div h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+div p {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+
+#discricao{
+    width: 50%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    width: 100%;
+}
