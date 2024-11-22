@@ -1,69 +1,153 @@
-*{
-    padding: 0%;
-    margin: 0%;
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
-    --corPrimaria: blanchedalmond;
-    --corSecundaria: black;
-    --branco: white;
-
-
-
-}
-nav{
-    display: flex;
-    gap: 10px;
-}
-
-header,footer{
-    width: 100%;
-    background-color: var(--corPrimaria);
-    padding: 20px 0px;
-    justify-content: space-around;
-    display: flex;
-}
-
-#logo{
-display: flex;
-gap: 20px;
-}
-
-#logo img{
-    width: 30px;
-}
-
-
-#catalago{
-    width: 80%;
-    margin: 10px auto;
+/* Estilo básico do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     padding: 20px;
-    background-color: var(--branco);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
+    margin: 0;
 }
-.livro{
-    width: 200px;
-    padding: 5px;
-    background-color: var(--corSecundaria);
-    color: var(--branco);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Título do catálogo */
+h1 {
     text-align: center;
-
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-button{
-    display: flex;
-    justify-content: space-around;
+/* Grid de filmes */
+#catalago {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
 
+/* Estilo de cada filme */
+.filme {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 220px;
+}
 
-.livro img{
-    width: 80%;
+/* Efeito de hover nos filmes */
+.filme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do filme */
+.filme img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.filme img:hover {
+    transform: scale(1.05);
+}
+
+/* Título do filme */
+.filme h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Botão de adicionar */
+.filme button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 15px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Ícone dentro do botão */
+.filme button img {
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Hover no botão */
+.filme button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Estilo de botões inativos ou desabilitados */
+.filme button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Responsividade - ajusta o layout para telas pequenas */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #catalago {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .filme img {
+        height: 240px;
+    }
+
+    .filme h4 {
+        font-size: 1rem;
+    }
+
+    .filme button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* Estilos de footer (caso queira adicionar) */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
 }
