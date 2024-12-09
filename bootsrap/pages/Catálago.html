@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Drinks - AMBEV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(240, 240, 240); padding: 20px;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand text-primary fw-bold" href="/pages/bootstrap.html">AMBEV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary mx-3" href="/pages/bootstrap.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary mx-3" href="/pages/Catálogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary mx-3" href="/pages/carrinho.html">Carrinho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted mx-3 disabled" aria-disabled="true">Sobre nós</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container mt-5">
+        <h1 class="text-center text-primary mb-4">Catálogo de Drinks</h1>
+
+
+        <div id="letter-buttons" class="btn-group mb-4 d-flex justify-content-center" role="group"
+            aria-label="Botões de letras">
+        </div>
+
+
+        <div id="drinkList" class="row">
+
+        </div>
+    </main>
+
+
+    <footer class="text-center py-3 mt-5 bg-white shadow-sm">
+        <p class="text-muted">&copy; 2024 AMBEV. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzwD3U9QxRlm8JUIdeFhQQDo/OY8zZCxUtPR2yeg9oaPi9vFvhhZcTVyP3NfzFCD" crossorigin="anonymous">
+        </script>
+
+
+    <script src="/script/pegarcerveja.js"></script>
+</body>
+
+</html>

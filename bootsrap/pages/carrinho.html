@@ -8,33 +8,34 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body style="background-color: rgb(128, 128, 128);padding:20px; margin: 20px;">
-<header>
-    <nav class="navbar navbar-expand-lg bg-white" style="height: 80px;" >
-        <div class="container-fluid">
-            <a class="navbar-brand text-primary" href="/pages/bootstrap.html">AMBEV</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-primary active mx-3" aria-current="page" href="/pages/bootstrap.html">Ambev</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary mx-3" href="#">Catálago</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary mx-3" href="/pages/carrinho.html">Carrinho</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled text-primary mx-3" aria-disabled="true">Sobre nós</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand text-primary fw-bold" href="/pages/bootstrap.html">AMBEV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary mx-3" href="/pages/bootstrap.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary mx-3" href="/pages/Catálogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary mx-3" href="/pages/carrinho.html">Carrinho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted mx-3 disabled" aria-disabled="true">Sobre nós</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
+
 <main>
     <section id="telacarrinho" class="container-fluid d-flex flex-column align-items-center">
         <h1 class="my-3">Carrinho</h1>
@@ -67,20 +68,22 @@
                             <input type="text" class="form-control" id="estado" disabled>
                         </div>
                         <div>
-                            <label for="cidade" class="form-label">cidade</label>
+                            <label for="cidade" class="form-label">Cidade</label>
                             <input type="text" class="form-control" id="cidade" disabled>
                         </div>
-                        <button type="submit" class="btn btn-primary">Buscar</button>
                     </form>
+                    <div id="loading" class="mt-3" style="display: none;">
+                        <p>Carregando...</p>
+                    </div>
                 </div>
-            
             </div>
         </div>
     </section>
 </main>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="/script/pegarCep.js"></script>
 </body>
 </html>
