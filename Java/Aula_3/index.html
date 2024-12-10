@@ -1,19 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Filmes</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/index.css">
-    
+
+
+
 </head>
+
 <body>
 
     <div class="container">
-        <h1>Catálogo de Filmes</h1>
-        <img src="/imagens/film.svg" alt="">
-        <div id="catalago"></div> <!-- Aqui os filmes serão inseridos -->
+        <h1 class="text-center mt-5 mb-4">Catálogo de Filmes</h1>
+
+
+        <img src="/fimes/banner.jpg" alt="Banner do Filme" class="banner">
+
+
+        <div class="movie-list">
+
+            <div class="movie-card">
+                <img src="/fimes/batman.jpg" alt="Filme 1">
+                <h5>batman cavalheiro das trevas</h5>
+                <p>Uma breve descrição de batmam.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFilme1">Ver
+                    detalhes</button>
+            </div>
+
+            <div class="movie-card">
+                <img src="/fimes/Blade.jpg" alt="Filme 2">
+                <h5>Blade</h5>
+                <p>Uma breve descrição de blade.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFilme2">Ver
+                    detalhes</button>
+            </div>
+
+            <div class="movie-card">
+                <img src="/fimes/circulo.jpg" alt="Filme 3">
+                <h5>Círculo de fogo</h5>
+                <p>Uma breve descrição de Círculo de fogo.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFilme3">Ver
+                    detalhes</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalFilme1" tabindex="-1" aria-labelledby="modalFilme1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFilme1Label">Descrição do Filme 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Batman O Cavaleiro das Trevas é a segunda produção da trilogia de Batman do diretor
+                            Christopher Nolan chegou aos cinemas em 2008. Hoje, por causa da estreia de um outro filme,
+                            ele é relembrado com tom de comparação seja pelo público ou por críticos. Desta vez, a luta
+                            do Batman de Christian Bale é tanto contra o crime organizado de Gotham City quanto contra o
+                            Coringa, interpretado por Heath Ledger, que é contratado pela máfia para matar o
+                            homem-morcego.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalFilme2" tabindex="-1" aria-labelledby="modalFilme2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFilme2Label">Descrição do Filme 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Após ser contaminado pelo sangue de uma criatura das trevas, Blade (Wesley Snipes)
+                            transformou-se num guerreiro imortal, metade-homem, metade-vampiro. Desde então, ele
+                            dedica-se a caçar o líder dos mortos-vivos Deacon Frost (Stephen Dorff) e seus asseclas, que
+                            estão planejando um grande plano para aumentar sua dominação sobre a raça humana.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalFilme3" tabindex="-1" aria-labelledby="modalFilme3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFilme3Label">Descrição do Filme 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Quando várias criaturas monstruosas, conhecidas como Kaiju, começam a emergir do mar, tem
+                            início uma batalha entre estes seres e os humanos. Para combatê-los, a humanidade desenvolve
+                            uma série de robôs gigantescos, os Jaegers, cada um controlado por duas pessoas através de
+                            uma conexão neural. Entretanto, mesmo os Jaegers se mostram insuficientes para derrotar os
+                            Kaiju. Diante deste cenário, a última esperança é um velho robô, obsoleto, que passa a ser
+                            comandado por um antigo piloto (Charlie Hunnam) e uma treinadora (Rinko Kikuchi).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-<script src="/index3.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
